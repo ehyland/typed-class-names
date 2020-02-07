@@ -1,6 +1,25 @@
 {
+  "name": "typed-class-names",
+  "version": "0.0.0-dev",
+  "description": "CLI to generate types from css",
+  "main": "index.js",
+  "repository": "https://github.com/ehyland/typed-class-names",
+  "author": "Eamon Hyland",
+  "license": "MIT",
+  "private": false,
   "scripts": {
-    "run:cli": "node -r ts-node/register/transpile-only ./src/cli"
+    "build": "tsc --build tsconfig.build.json",
+    "semantic-release": "semantic-release"
+  },
+  "bin": {
+    "typed-class-names": "./bin/typed-class-names.js"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "@types/node": "^13.7.0",
@@ -11,6 +30,7 @@
     "prettier": "^1.19.1"
   },
   "devDependencies": {
+    "semantic-release": "^17.0.2",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
   }
