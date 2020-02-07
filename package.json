@@ -15,7 +15,7 @@
     "typed-class-names": "./bin/typed-class-names.js"
   },
   "files": [
-    "dist",
+    "build",
     "bin"
   ],
   "publishConfig": {
