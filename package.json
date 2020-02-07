@@ -1,5 +1,5 @@
 {
-  "name": "typed-class-names",
+  "name": "@ehyland/typed-class-names",
   "version": "0.0.0-dev",
   "description": "CLI to generate types from css",
   "main": "index.js",
